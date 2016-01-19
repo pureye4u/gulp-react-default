@@ -1,0 +1,56 @@
+{
+	"name": "projectname",
+	"version": "1.0.0",
+	"description": "project description",
+	"main": "build/index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://git.duzon.com/pureye4u/projectname.git"
+	},
+	"author": "pureye4u",
+	"license": "MIT",
+	"devDependencies": {
+		"bower": "1.7.2",
+		"del": "2.2.0",
+		"gulp": "3.9.0",
+		"gulp-concat": "2.6.0",
+		"gulp-cssnano": "2.1.0",
+		"gulp-react": "3.1.0",
+		"gulp-uglify": "1.5.1",
+		"gulp-webserver": "0.9.1"
+	},
+	"paths": {
+		"libs": [
+			"./bower_components/jquery/dist/jquery.min.js",
+			"./bower_components/jquery/dist/jquery.min.map",
+			"./bower_components/react/react.min.js",
+			"./bower_components/react/react-dom.min.js",
+			"./bower_components/requirejs/require.js"
+		],
+		"src": {
+			"images": [
+				"./assets/**/*.jpg",
+				"./assets/**/*.gif",
+				"./assets/**/*.png"
+			],
+			"css": "./src/css/**/*.css",
+			"js": "./src/js/**/*.js",
+			"jsx": "./src/jsx/**/*.jsx",
+			"html": "./src/**/*.html"
+		},
+		"name": {
+			"style": "style.css",
+			"app": "app.js"
+		},
+		"dest": {
+			"images": "build/images",
+			"css": "build/css",
+			"libs": "build/js/libs",
+			"js": "build/js",
+			"base": "build"
+		}
+	}
+}
